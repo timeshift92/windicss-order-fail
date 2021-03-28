@@ -1,0 +1,14 @@
+<svelte:head>
+	<title>About</title>
+</svelte:head>
+# markdown heading 1 ## markdown heading 2
+<Test />
+<h1>About this site</h1>
+
+<p>
+	Hi, I'm Paul, I'm working on teaching myself more front end development with <a href="svelte.dev">Svelte.js</a> and Sapper
+</p>
+
+<script>
+	import Test from './admin/test.svelte'
+</script>

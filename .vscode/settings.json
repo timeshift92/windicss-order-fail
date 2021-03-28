@@ -1,0 +1,43 @@
+{
+	"path-intellisense.mappings": {
+		"@core": "${workspaceRoot}/src/core",
+		"@co": "${workspaceRoot}/src/components",
+		"@base": "${workspaceRoot}/src/components/base",
+		"@src": "${workspaceRoot}/src",
+		"@node": "${workspaceRoot}/src/node_modules",
+		"@f": "${workspaceRoot}/src/features",
+		"@root": "${workspaceRoot}",
+	},
+	"path-intellisense.extensionOnImport": true,
+	"editor.maxTokenizationLineLength": 20000,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		".nolluprc.js": true,
+		".prettierrc": true,
+		".editorconfig": true,
+		".gitattributes": true,
+		".routify": true,
+	},
+	"search.exclude": {
+		"**/node_modules": false,
+		"**/bower_components": true,
+		"**/*.code-search": true
+	},
+	"sqltools.connections": [
+		{
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 5432,
+			"driver": "PostgreSQL",
+			"name": "postgres",
+			"group": "hasrua",
+			"database": "postgres",
+			"username": "postgres",
+			"password": "postgrespassword"
+		}
+	]
+}

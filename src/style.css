@@ -1,0 +1,97 @@
+html,
+body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+#routify-app {
+	width: 100vw;
+	height: 100vh;
+}
+#routify-app > span {
+	display: none;
+}
+
+[type='text'], [type='email'], [type='url'], [type='password'], [type='number'], [type='date'], [type='datetime-local'], [type='month'], [type='search'], [type='tel'], [type='time'], [type='week'], [multiple], textarea, select{
+	background-color:var(--cds-field-01, #f4f4f4);
+}
+option{
+	background-color:var(--cds-field-01, #f4f4f4);
+}
+
+.scrollbar-c {
+	--scrollbar-track: initial;
+	--scrollbar-thumb: initial;
+	scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+	overflow: overlay;
+
+}
+.scrollbar-c::-webkit-scrollbar-track {
+	background-color: var(--scrollbar-track);
+}
+.scrollbar-c::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-thumb);
+}
+.scrollbar-c {
+	scrollbar-width: auto;
+}
+.scrollbar-c::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+}
+.scrollbar-c {
+	--scrollbar-track: initial;
+	--scrollbar-thumb: initial;
+	scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+	overflow: overlay;
+}
+.scrollbar-c::-webkit-scrollbar-track {
+	background-color: var(--scrollbar-track);
+}
+.scrollbar-c::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar-thumb);
+}
+.scrollbar-c {
+	scrollbar-width: thin;
+}
+.scrollbar-c::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+.scrollbar-c {
+	--scrollbar-track: #202020;
+	--scrollbar-thumb: #6b7280;
+}
+.scrollbar-c::-webkit-scrollbar-thumb {
+	border-radius: 50px;
+}
+.chevron {
+	float: right;
+	text-align: center;
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.7em;
+	position: relative;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.7em;
+}
+.chevron--right {
+	left: 0;
+	transform: rotate(45deg);
+}
+.chevron--bottom {
+	top: 0;
+	transform: rotate(135deg);
+}
+.chevron--left {
+	left: 0.25em;
+	transform: rotate(-135deg);
+}

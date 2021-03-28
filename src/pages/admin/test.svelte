@@ -1,0 +1,172 @@
+<div style="width:fit-content">
+	<Crud {data} />
+</div>
+
+<script>
+	import type { TField } from '@co/form/builder/interfaces'
+	import { FormBuilder } from '@co/form/builder'
+	import type { FieldSetContructorArgs, TabFieldContructorArgs } from '@co/form/builder'
+	import Crud from '@/features/crud/Index.svelte'
+	const fbJson: Array<TField | FieldSetContructorArgs | TabFieldContructorArgs> = [
+		{ name: 'id', labelText: 'id', type: 'number', invalid: false, invalidText: null, value: '' },
+		{ name: 'show_top_menu', labelText: 'show_top_menu', type: 'checkbox' },
+		{ name: 'show_bottom_menu', labelText: 'show_bottom_menu', type: 'checkbox' },
+		{ name: 'show_sidebar_menu', labelText: 'show_sidebar_menu', type: 'checkbox' },
+		{ name: 'depth', labelText: 'depth', type: 'number', invalid: false, invalidText: null, value: '' },
+		{ name: 'sort', labelText: 'sort', type: 'number', invalid: false, invalidText: null, value: '' },
+		{ name: 'created_at', labelText: 'created_at', type: 'date', invalid: false, invalidText: null, value: '' },
+		{ name: 'updated_at', labelText: 'updated_at', type: 'date', invalid: false, invalidText: null, value: '' },
+		{ name: 'component', labelText: 'component', type: 'textarea', invalid: false, invalidText: null, value: '' },
+		{
+			name: 'category',
+			type: 'tabs',
+			args: [{ name: 'id', title: 'category', value: 'id' }],
+			fields: [
+				{ name: 'id', labelText: 'id', type: 'number', validations: 'required', arg: 'id' },
+				{ name: 'created_at', labelText: 'created_at', type: 'date', validations: 'required', arg: 'id' },
+				{ name: 'updated_at', labelText: 'updated_at', type: 'date', validations: 'required', arg: 'id' },
+			],
+		},
+		{
+			name: 'section',
+			type: 'tabs',
+			args: [{ name: 'id', title: 'section', value: 'id' }],
+			fields: [
+				{ name: 'id', labelText: 'id', type: 'number', validations: 'required', arg: 'id' },
+				{ name: 'show_top_menu', labelText: 'show_top_menu', type: 'checkbox', validations: 'required', arg: 'id' },
+				{
+					name: 'show_bottom_menu',
+					labelText: 'show_bottom_menu',
+					type: 'checkbox',
+					validations: 'required',
+					arg: 'id',
+				},
+				{
+					name: 'show_sidebar_menu',
+					labelText: 'show_sidebar_menu',
+					type: 'checkbox',
+					validations: 'required',
+					arg: 'id',
+				},
+				{ name: 'category_id', labelText: 'category_id', type: 'number', validations: 'required', arg: 'id' },
+				{ name: 'depth', labelText: 'depth', type: 'number', validations: 'required', arg: 'id' },
+				{ name: 'parent_id', labelText: 'parent_id', type: 'number', validations: 'required', arg: 'id' },
+				{ name: 'sort', labelText: 'sort', type: 'number', validations: 'required', arg: 'id' },
+				{ name: 'created_at', labelText: 'created_at', type: 'date', validations: 'required', arg: 'id' },
+				{ name: 'updated_at', labelText: 'updated_at', type: 'date', validations: 'required', arg: 'id' },
+				{ name: 'component', labelText: 'component', type: 'text', validations: 'required', arg: 'id' },
+			],
+		},
+		{
+			name: 'section_locales',
+			type: 'tabs',
+			args: [{ name: 'section_id', title: 'section_locales', value: 'section_id' }],
+			fields: [
+				{ name: 'section_id', labelText: 'section_id', type: 'number', arg: 'section_id' },
+				{ name: 'locale', labelText: 'locale', type: 'text', arg: 'section_id' },
+				{ name: 'title', labelText: 'title', type: 'text', arg: 'section_id' },
+				{ name: 'slug', labelText: 'slug', type: 'text', arg: 'section_id' },
+				{ name: 'content', labelText: 'content', type: 'textarea', arg: 'section_id' },
+				{ name: 'link', labelText: 'link', type: 'text', arg: 'section_id' },
+				{ name: 'addings', labelText: 'addings', type: 'jsonb', arg: 'section_id' },
+				{ name: 'created_at', labelText: 'created_at', type: 'date', arg: 'section_id' },
+				{ name: 'updated_at', labelText: 'updated_at', type: 'date', arg: 'section_id' },
+				{ name: 'seo', labelText: 'seo', type: 'jsonb', arg: 'section_id' },
+			],
+		},
+		{
+			name: 'sections',
+			type: 'tabs',
+			args: [{ name: 'id', title: 'sections', value: 'id' }],
+			fields: [
+				{ name: 'id', labelText: 'id', type: 'number', arg: 'id' },
+				{ name: 'show_top_menu', labelText: 'show_top_menu', type: 'checkbox', arg: 'id' },
+				{ name: 'show_bottom_menu', labelText: 'show_bottom_menu', type: 'checkbox', arg: 'id' },
+				{ name: 'show_sidebar_menu', labelText: 'show_sidebar_menu', type: 'checkbox', arg: 'id' },
+				{ name: 'category_id', labelText: 'category_id', type: 'number', arg: 'id' },
+				{ name: 'depth', labelText: 'depth', type: 'number', arg: 'id' },
+				{ name: 'parent_id', labelText: 'parent_id', type: 'number', arg: 'id' },
+				{ name: 'sort', labelText: 'sort', type: 'number', arg: 'id' },
+				{ name: 'created_at', labelText: 'created_at', type: 'date', arg: 'id' },
+				{ name: 'updated_at', labelText: 'updated_at', type: 'date', arg: 'id' },
+				{ name: 'component', labelText: 'component', type: 'text', arg: 'id' },
+			],
+		},
+	]
+	const data = {
+		prefix: 'uztelecom',
+		queryName: 'uztelecom_sections',
+		formBuilder: new FormBuilder({ name: 'uztelecom_sections' }).parseJson(fbJson),
+		create: true,
+		actions: {
+			title: 'Действия',
+			update: true,
+			delete: true,
+		},
+		columns: [
+			// { name: 'id', title: 'id' },
+			// { name: 'show_top_menu', title: 'show_top_menu' },
+			// { name: 'show_bottom_menu', title: 'show_bottom_menu' },
+			// { name: 'show_sidebar_menu', title: 'show_sidebar_menu' },
+			// { name: 'depth', title: 'depth' },
+			// { name: 'sort', title: 'sort' },
+			// { name: 'created_at', title: 'created_at' },
+			// { name: 'updated_at', title: 'updated_at' },
+			// { name: 'component', title: 'component' },
+			{ name: 'category', title: 'category', fields: ['id', 'created_at', 'updated_at'] },
+			{
+				name: 'section',
+				title: 'section',
+				fields: [
+					'id',
+					'show_top_menu',
+					'show_bottom_menu',
+					'show_sidebar_menu',
+					'category_id',
+					'depth',
+					'parent_id',
+					'sort',
+					'created_at',
+					'updated_at',
+					'component',
+				],
+			},
+			{
+				name: 'section_locales',
+				title: 'section_locales',
+				fields: [
+					'section_id',
+					'locale',
+					'title',
+					'slug',
+					'content',
+					'link',
+					'addings',
+					'created_at',
+					'updated_at',
+					'seo',
+				],
+			},
+			{
+				name: 'sections',
+				title: 'sections',
+				fields: [
+					'id',
+					'show_top_menu',
+					'show_bottom_menu',
+					'show_sidebar_menu',
+					'category_id',
+					'depth',
+					'parent_id',
+					'sort',
+					'created_at',
+					'updated_at',
+					'component',
+				],
+			},
+		],
+		pagination: {
+			limit: 10,
+		},
+	}
+</script>
