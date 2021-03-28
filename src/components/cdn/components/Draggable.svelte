@@ -1,5 +1,5 @@
 {#if draggable}
-  <section on:mousedown={onMouseDown} style="left: {left}px; top: {top}px;" class="draggable">
+  <section on:mousedown={onMouseDown} style="left: {left}px; top: {top}px; height:50vh" class="draggable">
     <slot />
   </section>
 {:else}

@@ -296,5 +296,5 @@
 <script>
 	import { layout, url } from '@roxi/routify'
 	import { Modal, ModalSwipe } from '@base/index'
-	import { FileManagerAdapter } from '@co/cdn/file_manager'
+	import { FileManagerAdapter } from '@/components/cdn/file-manager'
 </script>

@@ -10,7 +10,7 @@
 			<file-manager-card>
 				<file-manager-card borderBottom>
 					<file-manager-command gap content="flex-end">
-						<Icon name="Subtract24|RowExpand24" color="red"  on:click={foldFmHandler} />
+						<Icon name="Subtract24|RowExpand24" color="red" on:click={foldFmHandler} />
 						<Icon name="Scale24|Minimize24" color="red" on:click={changeSizeHandler} />
 						<Icon name="Close24" color="red" on:click={closeFm} />
 					</file-manager-command>
@@ -107,13 +107,12 @@
 		padding: 1rem;
 	}
 	file-manager-body {
+		height: 100vh;
 		display: grid;
 		grid-template-columns: 3fr 8fr;
 	}
 	file-manager-command {
-		padding: 1rem 0 0 0;
-
-		display: block;
+		display: flex;
 		align-self: flex-end;
 		gap: 1rem;
 	}
@@ -122,6 +121,9 @@
 		flex-flow: column;
 		position: absolute;
 		z-index: 10;
+		height: 100%;
+		width: 100%;
+		top:0;
 	}
 	file-manager-card[borderBottom] {
 		border-bottom: 1px solid;
@@ -130,6 +132,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 0;
-		background-color: #202020;
+		background-color: var(--cds-ui-background);
+
 	}
 </style>

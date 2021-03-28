@@ -22,6 +22,7 @@
 					on:mouseleave={(e) => {
 						stikerIcon = 'x'
 					}}
+
 					stroke="var(--cds-text-04)"
 					size="1"
 					on:click={handleClose}

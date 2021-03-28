@@ -73,7 +73,7 @@
 			iconName = name[index]
 			iconLoader()
 		}
-		dispatch('click')
+		// dispatch('click')
 	}
 
 	async function iconLoader() {
@@ -105,7 +105,7 @@
 		} else {
 			pkg += `/${splitPkg[1].toLowerCase()}.js`
 		}
-		
+
 		return import(/* @vite-ignore */ pkg.toLowerCase()).then((_icon) => {
 			_icon = _icon.default
 			attrs = _icon.attrs
