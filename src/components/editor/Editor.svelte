@@ -35,6 +35,7 @@
 	<EditorColorPicker bind:this={$references.colorPicker} />
 </nu-block>
 
+<div class="h-full p-2"></div>
 <script context="module">
 	const editors = []
 </script>

@@ -18,15 +18,15 @@
 
 <FileManagerAdapter />
 
-<div class="max-w-sm overflow-hidden bg-gray-200 rounded shadow-lg">
-	<img class="w-full" src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+<div class="max-w-sm overflow-hidden bg-gray-200 rounded shadow-lg ">
+	<img class="w-full " src="https://v1.tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
 	<div class="px-6 py-4">
 	  <div class="mb-2 text-xl font-bold">The Coldest Sunset</div>
 	  <p class="text-base text-gray-700">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
 	  </p>
 	</div>
-	<div class="px-6 pt-4 pb-2">
+	<div class="p-4 px-6 pt-4 pb-2 bg-red-300 ">
 	  <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#photography</span>
 	  <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#travel</span>
 	  <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#winter</span>
@@ -36,7 +36,7 @@
 
   <div class="h-full scrollbar-c">
 
-<div class="p-2 text-4xl">Hello!</div>
+<div class="p-5 text-4xl pl-36 hover:bg-red-300">Hello!</div>
 
 <div class="p-2">This is an example of a text description created by this
 
@@ -61,12 +61,12 @@
       <div class="sideBarMenuAccordion" style="outline: 0px !important;">
         <nav style="outline: 0px !important;">
           <ul style="outline: 0px !important;">
-            <li class="dropdown " style="position: relative; list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
+            <li class="dropdown" style="position: relative; list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
               <a href="https://uztelecom.uz/uz/jismoniy-shaxslarga/internet-2/tariflar-2" style="color: rgb(33, 47, 61); text-decoration: none; display: block; padding: 15px 40px 15px 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 20px; font-family: Montserrat, sans-serif; transition: color 0.25s ease 0s; outline: 0px !important;">
                 <br class="Apple-interchange-newline">Tariflar
               </a>
             </li>
-            <li class="dropdown " style="position: relative; list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
+            <li class="dropdown" style="position: relative; list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
               <span class="icon icon-chevrone-bottom" style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: 1; -webkit-font-smoothing: antialiased; position: absolute; top: 0px; right: 0px; font-size: 14px; color: rgb(141, 149, 157); display: inline-block; padding: 18px; cursor: pointer; outline: 0px !important; font-family: icomoon !important;"></span>
               <a href="https://uztelecom.uz/uz/jismoniy-shaxslarga/internet-2/tariflar-2/unlim-21/unlim-300-9" style="color: rgb(33, 47, 61); text-decoration: none; display: block; padding: 15px 40px 15px 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 20px; font-family: Montserrat, sans-serif; transition: color 0.25s ease 0s; outline: 0px !important;">Xizmatlar</a>
             </li>
@@ -76,7 +76,7 @@
             <li class="" style="list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
               <a href="https://uztelecom.uz/uz/jismoniy-shaxslarga/internet-2/qanday-ulanish-mumkin-4" style="color: rgb(33, 47, 61); text-decoration: none; display: block; padding: 15px 40px 15px 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 20px; font-family: Montserrat, sans-serif; transition: color 0.25s ease 0s; outline: 0px !important;">Qanday ulanish mumkin</a>
             </li>
-            <li class="dropdown " style="position: relative; list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
+            <li class="dropdown" style="position: relative; list-style: none; border-top-width: 1px; border-top-color: rgb(232, 240, 248); outline: 0px !important;">
               <span class="icon icon-chevrone-bottom" style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: 1; -webkit-font-smoothing: antialiased; position: absolute; top: 0px; right: 0px; font-size: 14px; color: rgb(141, 149, 157); display: inline-block; padding: 18px; cursor: pointer; outline: 0px !important; font-family: icomoon !important;"></span>
               <a href="https://uztelecom.uz/uz/jismoniy-shaxslarga/internet-2/foydali-axborot-2/savollar-va-javoblar-2" style="color: rgb(33, 47, 61); text-decoration: none; display: block; padding: 15px 40px 15px 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 18px; line-height: 20px; font-family: Montserrat, sans-serif; transition: color 0.25s ease 0s; outline: 0px !important;">Foydali axborot</a>
             </li>
